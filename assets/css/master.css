@@ -25,6 +25,14 @@ header {
   height: 25px;
 }
 
+.navbar-left a {
+  cursor: pointer;
+}
+
+.navbar-left a.active {
+  color: rgb(0,0,0);
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -43,7 +51,7 @@ header {
 
 .navbar a {
   text-decoration: none;
-  color: rgb(202,202,203);
+  color: rgb(139, 149, 158);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -135,11 +143,21 @@ svg {
 
 .hide-menu ul li {
   margin-top: 20px;
-  color: rgb(160,169,176)
 }
 
-.hide-menu ul li a{
-  color: rgb(160,169,176)
+.hide-menu ul li a.disabled {
+  cursor: text;
+  color: rgb(220, 220, 221);
+}
+
+.hide-menu ul li a.disabled:after {
+  content: "coming soon";
+  text-transform: uppercase;
+  color: rgb(30,117,237);
+  font-size: 8px;
+  position: relative;
+  bottom: 15px;
+  right: 10px;
 }
 
 header .hide-menu [name=features] {

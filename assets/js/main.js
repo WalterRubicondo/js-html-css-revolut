@@ -1,6 +1,7 @@
 $(document).ready(function () {
   menu()
   focus()
+  changePage()
 })
 
 function menu() {
@@ -29,5 +30,15 @@ function focus() {
 
   focus.mouseleave(function() {
     $(this).removeClass("active")
+  })
+}
+
+function changePage() {
+  var change = $("header .navbar-left a")
+
+  change.click(function () {
+    var page =  $("active");
+    $(".active").removeClass("active")
+    $(this).addClass("active")
   })
 }

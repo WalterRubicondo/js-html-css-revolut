@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100vw;
+}
+/* HEADER */
+
+/* HEADER NAVBAR*/
+.navbar {
+  margin: 0 auto;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 25px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left ul {
+  width: 250px;
+  justify-content: space-between;
+}
+
+.navbar-right > ul {
+  width: 600px;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(202,202,203);
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a:hover {
+  color: rgb(0, 0, 0);
+}
+
+header .navbar .navbar-right ul li a[class^="call-"]:after {
+  content: "";
+  top: 58%;
+  height: 25px;
+  position: absolute;
+  display: block;
+}
+
+a.call-features:after {
+  width: 62px;
+}
+
+a.call-plans:after {
+  width: 40px;
+}
+
+a.call-about:after {
+  width: 64px;
+}
+
+a.call-help:after {
+  width: 36px;
+}
+/* HEADER NAVBAR*/
+
+/* HEADER BTN*/
+.btn {
+  padding: 10px 24px;
+  border-radius: 10px;
+}
+
+header .navbar .navbar-right .btn-sign {
+  color: rgb(0, 0, 0);
+  background-color: rgb(235,235,235);
+}
+
+header .navbar .navbar-right .btn-app {
+  color: rgb(255, 255, 255);
+  background-color: rgb(25,28,31);
+}
+
+.btn-app:hover {
+  opacity: 0.75;
+}
+
+/* HEADER BTN*/
+
+/* HEADER HIDE MENU*/
+.hide-menu > div {
+    box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px, rgb(0 0 0 / 8%) 0px 8px 16px 0px;
+    position: absolute;
+    top: 70px;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  color: rgb(206,213,219);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+svg {
+  width: 25px;
+  background-color: rgb(206,213,219);
+  color: rgb(255, 255, 255);
+  padding: 3px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.hide-menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hide-menu ul li {
+  margin-top: 20px;
+  color: rgb(160,169,176)
+}
+
+.hide-menu ul li a{
+  color: rgb(160,169,176)
+}
+
+header .hide-menu [name=features] {
+  right: 20%;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 800px;
+}
+
+header .hide-menu [name=plans] {
+  right: 36%;
+}
+
+header .hide-menu [name=about] {
+  right: 30%;
+}
+
+header .hide-menu [name=help] {
+  right: 26%;
+}
+
+.hide-menu > div.active {
+  display: flex;
+}
+/* HEADER HIDE MENU*/
